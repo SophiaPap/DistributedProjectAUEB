@@ -4,6 +4,7 @@ import java.util.List;
 public class Accommodation
 {
     private List<String> reservations;
+    private int id;
     private String accName;
     private int guests;
     private String location;
@@ -23,7 +24,9 @@ public class Accommodation
         this.totalRating = 0;
         this.noOfReviews = 0;
     }
-
+    public int getId(){
+        return id;
+    }
     public String getAccName()
     {
         return accName;
@@ -109,8 +112,9 @@ public class Accommodation
     }
 
     //tha prepei na exw mia methodo pou tha kanei add reservation klhsh apo renter
-    
+
     public void showReservations(){
+        System.out.println("The "+accName+" is reserved in these days");
         for(String reservation : reservations)
             System.out.println(reservation);
     }
