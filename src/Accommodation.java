@@ -2,6 +2,8 @@ import java.util.Date;
 
 public class Accommodation
 {
+    private List<String> reservations;
+    
     private String accName;
     private int guests;
     private String location;
@@ -104,6 +106,17 @@ public class Accommodation
     {
         this.dtFrom = dtFrom;
         this.dtTo = dtTo;
+    }
+
+    public void addReserv(Date from,date until){
+        //prepei na kanoume update diathesimothta tou accommodation
+        reservations.add("DateFrom: " + date + ", DateUntil: " + renter););
+        
+    }
+
+    public void showReservations(){
+        for(String reservation : reservations)
+            System.out.println(reservation);
     }
 
 }
