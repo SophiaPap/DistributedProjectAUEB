@@ -8,7 +8,9 @@ public class Main
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.println("Hello and welcome!");
         Accommodation acc1 = new Accommodation("acc1", 1, "Athens", 70);
-
+        Manager m= new Manager();
+        m.addAccom(acc1);
+        m.showAccomReservs();
 
     }
 }
